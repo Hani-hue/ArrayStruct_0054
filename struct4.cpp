@@ -32,10 +32,12 @@ int main()
         getline(cin, honk[i].weapon.name);
         cout << "Masukkan damage=";
         cin >> honk[i].weapon.damage;
+        cin.ignore();
     }
+    cout << endl;
+    cout << "Tampilkan Player" << endl;
     for (int i = 0; i < 3; i++)
     {
-
         cout << "Tampilkan Player" << endl;
         cout << "Nama Player=" << honk[i].name << endl;
         cout << "Id Player=" << honk[i].id << endl;
